@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SEO Analyzer</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .container {
+      background: white;
+      width: 450px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    h1 { color: #2d3748; }
+    input {
+      width: 85%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { background: #1d4ed8; }
+    .error { color: red; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SEO Analyzer</h1>
+    <p>Enter any website URL to analyze its SEO performance.</p>
+    <form action="/analyze" method="POST">
+      <input type="text" name="url" placeholder="https://example.com" required>
+      <button type="submit">Analyze</button>
+    </form>
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+  </div>
+</body>
+</html>
