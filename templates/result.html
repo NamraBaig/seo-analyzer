@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SEO Report</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8fafc;
+      padding: 30px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    h2 { color: #2563eb; text-align: center; }
+    ul {
+      list-style: none;
+      text-align: left;
+      padding: 0;
+    }
+    li {
+      background: #f1f5f9;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 8px;
+    }
+    .score {
+      font-size: 24px;
+      color: #16a34a;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    a {
+      display: block;
+      margin-top: 25px;
+      text-align: center;
+      color: #2563eb;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>SEO Report for {{ url }}</h2>
+    <ul>
+      <li><b>Title:</b> {{ onpage.title or 'None' }}</li>
+      <li><b>Description:</b> {{ onpage.description or 'None' }}</li>
+      <li><b>H1 Tags:</b> {{ onpage.h1_tags }}</li>
+      <li><b>Word Count:</b> {{ content.word_count }}</li>
+      <li><b>Images (Alt/Total):</b> {{ onpage.images_with_alt }}/{{ onpage.images }}</li>
+      <li><b>Internal Links:</b> {{ links.internal_links }}</li>
+      <li><b>External Links:</b> {{ links.external_links }}</li>
+      <li><b>HTTPS:</b> {{ technical.https }}</li>
+      <li><b>Sitemap:</b> {{ technical.sitemap }}</li>
+      <li><b>Robots.txt:</b> {{ technical.robots }}</li>
+      <li><b>Social Tags:</b> {{ social.social_tags }}</li>
+    </ul>
+    <div class="score">SEO Score: {{ score }}/100</div>
+    <a href="/">← Analyze Another Website</a>
+  </div>
+</body>
+</html>
