@@ -5,7 +5,6 @@ from urllib.parse import urlparse, urljoin
 
 app = Flask(__name__)
 
-# ---------- Helper Functions ----------
 
 def check_technical(parsed, base_url):
     results = {}
@@ -77,7 +76,6 @@ def calculate_score(technical, onpage, content, links, social):
     total = tech_score + onpage_score + content_score + links_score + social_score
     return round(total, 2)
 
-# ---------- Routes ----------
 
 @app.route('/')
 def home():
@@ -113,3 +111,4 @@ def analyze():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
