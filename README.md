@@ -94,7 +94,7 @@ Home Page
 <img width="1365" height="661" alt="image" src="https://github.com/user-attachments/assets/856ab209-2c76-4c60-9ac5-c41492f38b1a" />
 
 SEO Report Page 
-<img width="1365" height="668" alt="image" src="https://github.com/user-attachments/assets/c67e5155-64a1-4f87-97e1-d249829b1d00" />
+<img width="1365" height="669" alt="image" src="https://github.com/user-attachments/assets/84dbbb5e-5b61-48c9-9a38-9f72cc41a891" />
 
 
 Documentation Summary
@@ -108,3 +108,4 @@ Author
 Namra Baig 
 B.Tech in Cybersecurity | Tech Enthusiast  
 [LinkedIn](https://linkedin.com/in/namrabaig15) | [GitHub](https://github.com/NamraBaig)
+
