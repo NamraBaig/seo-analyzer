@@ -24,7 +24,7 @@ Analyze any website for:
 
 ✅ User-friendly web interface  
 ✅ Optional API endpoint for JSON results  
-✅ Lightweight & easily deployable (Flask + Vercel/Render)
+✅ Lightweight & easily deployable (Flask + Vercel)
 
 
 
@@ -53,7 +53,6 @@ Scoring Formula
 Each section contributes to the final score (0–100), based on the number and quality of successful checks.
 
 System Architecture
-
 User Input: 
 The user enters a website URL through the frontend form.  
 
@@ -68,8 +67,7 @@ Results are displayed on a clean HTML results page and can also be fetched via a
 
 
 
- How to Run Locally
-
+How to Run Locally
 Prerequisites
 - Python 3.x
 - pip installed
@@ -93,24 +91,20 @@ Now open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser 🌐
 Screenshots
 
 Home Page  
-![Home Page](https://via.placeholder.com/700x350?text=SEO+Analyzer+Home)
+<img width="1365" height="661" alt="image" src="https://github.com/user-attachments/assets/856ab209-2c76-4c60-9ac5-c41492f38b1a" />
 
 SEO Report Page 
-![Result Page](https://via.placeholder.com/700x350?text=SEO+Report+Example)
+<img width="1365" height="668" alt="image" src="https://github.com/user-attachments/assets/c67e5155-64a1-4f87-97e1-d249829b1d00" />
 
-*(You can later add real screenshots once deployed — just press PrtSc and upload to GitHub.)*
 
----
+Documentation Summary
 
-## 📘 Documentation Summary
-
-- Built using **Flask** (backend) and **BeautifulSoup** (HTML parser)
+- Built using Flask (backend) and BeautifulSoup (HTML parser)
 - Performs SEO checks without using third-party APIs
-- Uses a custom **weighted scoring algorithm**
-- Deployed on **Vercel** with serverless Python runtime
+- Uses a custom weighted scoring algorithm
+- Deployed on Vercel with serverless Python runtime
 
 Author
 Namra Baig 
 B.Tech in Cybersecurity | Tech Enthusiast  
-[LinkedIn](https://linkedin.com/in/namrabaig15) | [GitHub](https://github.com/namrabaig)
-
+[LinkedIn](https://linkedin.com/in/namrabaig15) | [GitHub](https://github.com/NamraBaig)
