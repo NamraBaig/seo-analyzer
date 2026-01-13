@@ -105,7 +105,9 @@ Documentation Summary
 - Deployed on Vercel with serverless Python runtime
 
 Author
-Namra Baig 
+
+*Namra Baig* 
 B.Tech in Cybersecurity | Tech Enthusiast  
 [LinkedIn](https://linkedin.com/in/namrabaig15) | [GitHub](https://github.com/NamraBaig)
+
 
